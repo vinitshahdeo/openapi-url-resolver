@@ -36,6 +36,7 @@ To use `openapi-url-resolver`, you need to pass an OpenAPI specification object 
 ```javascript
 const openapiUrlResolver = require('openapi-url-resolver');
 
+// add complete spec
 const spec = {
   openapi: '3.0.0',
   servers: [
@@ -60,6 +61,7 @@ To extract host information from an OpenAPI specification, you can use the getHo
 ```javascript
 const openapiUrlResolver = require('openapi-url-resolver');
 
+// add complete spec
 const spec = {
   openapi: '3.0.0',
   servers: [
@@ -82,7 +84,18 @@ console.log(hosts); // ['api.example.com', 'staging-api.example.com']
 
 ## Contributing
 
-Contributions to openapi-url-resolver are welcome! If you find a bug or want to suggest a new feature, please open an issue on the GitHub repository. If you want to contribute code, please fork the repository, make your changes, and submit a pull request.
+Contributions to openapi-url-resolver are welcome! If you find a bug or want to suggest a new feature, please open an issue on the GitHub repository. If you want to contribute code, please fork the repository, make your changes, and submit a pull request. Your contributions and feedback are most welcome!
+
+## Support
+
+If you find this package useful, please consider:
+
+- Following me on Twitter for updates and package releases.
+- Starring this repository on GitHub to show your appreciation.
+- Sponsoring me on GitHub to support ongoing development.
+- Buying me a coffee via PayPal or Ko-fi to help me stay fueled and focused.
+
+Thank you for your support!
 
 ## License
 
