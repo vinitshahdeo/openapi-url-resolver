@@ -6,7 +6,9 @@
 
 ## Add minor note about the server url, host for OpenAPI 3.x specs
 
-## Write blog about the same
+## Write dev.to blog about the same
+
+@todo: <release another npm to get the endpoints>
 
 
 ## 📦 Installation
