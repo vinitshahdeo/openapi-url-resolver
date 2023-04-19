@@ -4,6 +4,10 @@
 
 `openapi-url-resolver` is an NPM package that provides a simple and efficient way to resolve URLs from OpenAPI specifications. It also removes protocols from the resolved URLs and allows you to easily extract host information from OpenAPI definitions. This package is ideal for developers working with APIs that conform to the OpenAPI specification and need to extract server information to make API calls.
 
+## Add minor note about the server url, host for OpenAPI 3.x specs
+
+## Write blog about the same
+
 
 ## 📦 Installation
 
