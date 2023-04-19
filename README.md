@@ -10,6 +10,11 @@ You can install `openapi-url-resolver` via NPM:
 npm install openapi-url-resolver
 ```
 
+##
+
+Add notes about yaml parser, postman collection
+
+
 ## Usage
 
 It supports two methods:
