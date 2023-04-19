@@ -1,8 +1,11 @@
+
+
 # OpenAPI URL Resolver
 
 `openapi-url-resolver` is an NPM package that provides a simple and efficient way to resolve URLs from OpenAPI specifications. It also removes protocols from the resolved URLs and allows you to easily extract host information from OpenAPI definitions. This package is ideal for developers working with APIs that conform to the OpenAPI specification and need to extract server information to make API calls.
 
-## Installation
+
+## 📦 Installation
 
 You can install `openapi-url-resolver` via NPM:
 
@@ -14,8 +17,12 @@ npm install openapi-url-resolver
 
 Add notes about yaml parser, postman collection
 
+we assume openapi is valid
 
-## Usage
+keeping it lightweight
+
+
+## 💻 Usage
 
 It supports two methods:
 
@@ -82,11 +89,11 @@ console.log(hosts); // ['api.example.com', 'staging-api.example.com']
 
 ```
 
-## Contributing
+## 🤝 Contributing
 
 Contributions to openapi-url-resolver are welcome! If you find a bug or want to suggest a new feature, please open an issue on the GitHub repository. If you want to contribute code, please fork the repository, make your changes, and submit a pull request. Your contributions and feedback are most welcome!
 
-## Support
+## ❤️ Support
 
 If you find this package useful, please consider:
 
@@ -97,6 +104,6 @@ If you find this package useful, please consider:
 
 Thank you for your support!
 
-## License
+## 📝 License
 
 `openapi-url-resolver` is released under the MIT License.
