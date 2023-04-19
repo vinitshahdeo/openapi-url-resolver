@@ -1,0 +1,31 @@
+{
+  "name": "openapi-url-resolver",
+  "version": "1.0.0",
+  "description": "Resolve server URLs and extracts hosts from OpenAPI 3.0 and Swagger specifications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinitshahdeo/openapi-url-resolver.git"
+  },
+  "keywords": [
+    "openapi",
+    "swagger",
+    "server",
+    "url",
+    "host",
+    "parser",
+    "resolver",
+    "extractor",
+    "api",
+    "specification"
+  ],
+  "author": "Vinit Shahdeo <vinitshahdeo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vinitshahdeo/openapi-url-resolver/issues"
+  },
+  "homepage": "https://github.com/vinitshahdeo/openapi-url-resolver#readme"
+}
