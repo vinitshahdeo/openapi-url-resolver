@@ -1,8 +1,27 @@
+<div align="center">
+<img src="./assets/openapi-logo.png" height='100px' width='100px'/>
+<h1>OpenAPI URL Resolver</h1>
 
+<p>
+<a href="https://github.com/vinitshahdeo/openapi-url-resolver/actions/workflows/node.js.yml"><img src="https://github.com/vinitshahdeo/openapi-url-resolver/actions/workflows/node.js.yml/badge.svg" alt="GitHub Actions for OpenAPI URL Resolver"></a>
 
-# OpenAPI URL Resolver
+<a href="https://twitter.com/Vinit_Shahdeo">
+  <img src="https://img.shields.io/twitter/follow/Vinit_Shahdeo?style=social" alt="Twitter Follow">
+</a>
 
-![https://github.com/vinitshahdeo/openapi-url-resolver/actions/workflows/node.js.yml](https://github.com/vinitshahdeo/openapi-url-resolver/actions/workflows/node.js.yml/badge.svg)
+<a href="">
+<img alt="npm openapi-url-resolver" src="https://img.shields.io/npm/v/inspirational-quotes?label=openapi-url-resolver&logo=npm">
+</a>
+
+<img alt="npm bundle size" src="https://img.shields.io/bundlephobia/min/celeb-diwali?logo=npm&color=orange">
+
+<a href='./LICENSE'>
+<img alt="GitHub License" src="https://img.shields.io/github/license/vinitshahdeo/celeb-diwali?label=License&logo=github">
+</a>
+
+</p>
+<br/>
+</div>
 
 
 **openapi-url-resolver** is a **lightweight** NPM package that provides a simple and efficient way to resolve server URLs from OpenAPI specifications. It also removes protocols from the resolved URLs and allows you to **easily extract host information from OpenAPI definitions**. This package is ideal for developers working with APIs that conform to the [OpenAPI 3.x specification](https://swagger.io/specification/) and need to extract [server information](https://spec.openapis.org/oas/v3.1.0#server-object) to make API calls.
