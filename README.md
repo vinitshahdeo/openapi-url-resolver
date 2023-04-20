@@ -111,12 +111,12 @@ npm test
 
 ## 🚫 Limitations
 
-The below are the known limitations, and they are not handled to keep it a lightweight and focused module to just extract the [server information](https://spec.openapis.org/oas/v3.1.0#server-object).
+The below are the known limitations, and they are not handled to keep it a **lightweight** and **focused** module to just extract the [server information](https://spec.openapis.org/oas/v3.1.0#server-object).
 
 - It does not validate the OpenAPI definition. You can use [openapi-schema-validator](https://www.npmjs.com/package/openapi-schema-validator) for validating the OpenAPI definition.
 - It only works with JSON format.
   - Use [yaml-to-json-schema](https://www.npmjs.com/package/yaml-to-json-schema) to convert YAML to JSON.
-  - Use [postman-to-openapi](https://www.npmjs.com/package/postman-to-openapi) to Postman collection to OpenAPI 3.x
+  - Use [postman-to-openapi](https://www.npmjs.com/package/postman-to-openapi) to convert Postman collection to OpenAPI 3.x
 
 ## 🤝 Contributing
 
