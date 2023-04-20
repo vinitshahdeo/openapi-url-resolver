@@ -94,12 +94,14 @@ The below are the known limitations, and they are not handled to keep it a light
 
 Contributions to `openapi-url-resolver` are most welcome! If you find a bug or want to suggest a new feature, please open an issue on the GitHub repository. If you want to contribute code, please fork the repository, make your changes, and submit a pull request. Your contributions and feedback are most welcome!
 
+## 📝 License
+
+[openapi-url-resolver](https://github.com/vinitshahdeo/openapi-url-resolver) is released under the [MIT License](./LICENSE).
+
 ## ❤️ Support
 
 If you find this package useful, please consider [starring this repository]() on GitHub to show your appreciation. You can stay connected with me on Twitter—[@vinit_shahdeo](https://twitter.com/Vinit_Shahdeo). 
 
 Thank you for your support!
 
-## 📝 License
-
-[openapi-url-resolver](https://github.com/vinitshahdeo/openapi-url-resolver) is released under the [MIT License](./LICENSE).
+<a href="https://www.buymeacoffee.com/vinitshahdeo" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
