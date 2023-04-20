@@ -2,6 +2,9 @@
 
 # OpenAPI URL Resolver
 
+![](https://github.com/vinitshahdeo/openapi-url-resolver/actions/workflows/node.js.yml/badge.svg)
+
+
 **openapi-url-resolver** is a **lightweight** NPM package that provides a simple and efficient way to resolve server URLs from OpenAPI specifications. It also removes protocols from the resolved URLs and allows you to **easily extract host information from OpenAPI definitions**. This package is ideal for developers working with APIs that conform to the [OpenAPI 3.x specification](https://swagger.io/specification/) and need to extract [server information](https://spec.openapis.org/oas/v3.1.0#server-object) to make API calls.
 
 ## 📦 Installation
