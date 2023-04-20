@@ -2,7 +2,7 @@
 
 # OpenAPI URL Resolver
 
-`openapi-url-resolver` is a **lightweight** NPM package that provides a simple and efficient way to resolve server URLs from OpenAPI specifications. It also removes protocols from the resolved URLs and allows you to **easily extract host information from OpenAPI definitions**. This package is ideal for developers working with APIs that conform to the [OpenAPI specification](https://swagger.io/specification/) and need to extract server information to make API calls.
+**openapi-url-resolver** is a **lightweight** NPM package that provides a simple and efficient way to resolve server URLs from OpenAPI specifications. It also removes protocols from the resolved URLs and allows you to **easily extract host information from OpenAPI definitions**. This package is ideal for developers working with APIs that conform to the [OpenAPI 3.x specification](https://swagger.io/specification/) and need to extract server information to make API calls.
 
 ## 📦 Installation
 
@@ -14,12 +14,11 @@ npm install openapi-url-resolver
 
 ## 💻 Usage
 
-To use `openapi-url-resolver`, you need to pass an OpenAPI 3.x specification object to the resolve() function. This function will return an array of resolved server URLs:
+To use `openapi-url-resolver`, you need to pass an [OpenAPI 3.x specification](https://swagger.io/specification/) object to the `resolve()` function. This function will return an array of resolved server URLs:
 
 ```javascript
-const openapiUrlResolver = require('./src')
+const openapiUrlResolver = require('openapi-url-resolver')
 
-// add complete spec
 const spec = {
   openapi: '3.0.0',
   servers: [
@@ -97,15 +96,10 @@ Contributions to `openapi-url-resolver` are most welcome! If you find a bug or w
 
 ## ❤️ Support
 
-If you find this package useful, please consider:
-
-- Following me on Twitter for updates and package releases.
-- Starring this repository on GitHub to show your appreciation.
-- Sponsoring me on GitHub to support ongoing development.
-- Buying me a coffee via PayPal or Ko-fi to help me stay fueled and focused.
+If you find this package useful, please consider [starring this repository]() on GitHub to show your appreciation. You can stay connected with me on Twitter—[@vinit_shahdeo](https://twitter.com/Vinit_Shahdeo). 
 
 Thank you for your support!
 
 ## 📝 License
 
-`openapi-url-resolver` is released under the MIT License.
+[openapi-url-resolver](https://github.com/vinitshahdeo/openapi-url-resolver) is released under the [MIT License](./LICENSE).
