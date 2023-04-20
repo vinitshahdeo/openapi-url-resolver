@@ -73,7 +73,7 @@ console.log(serverUrls)
 
 ```
 
-## Testing
+## 🧪 Testing
 
 You can test using the below command or write your own tests using the OpenAPI specifications [examples](./definitions/).
 
@@ -81,7 +81,7 @@ You can test using the below command or write your own tests using the OpenAPI s
 npm test
 ```
 
-## Limitations
+## 🚫 Limitations
 
 The below are the known limitations, and they are not handled to keep it a lightweight and focused module to just extract the server information.
 
