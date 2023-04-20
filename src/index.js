@@ -1,26 +1,32 @@
 /**
  * Returns an array of hosts from the Open API Definition provided in JSON format.
- *
+ * 
+ * @author Vinit Shahdeo <https://github.com/vinitshahdeo>
  * @param {Object} spec - Open API Definition in JSON format
  * @returns {Array} - Array containing host
  */
-function getHosts(spec = {}) {
+function getHosts(spec = {}, removeProtocol = true) {
     /**
      * OpenAPI 2 (aka Swagger) contains host, the schemes like HTTP, HTTPS are present as a separate field.
      * Learn more: https://swagger.io/specification/v2/
      */
-    if (spec.version === '2.0') {
+    if (spec.swagger === '2.0') {
         return spec.host;
     }
 
     // Get the server URLs
     const serverUrls = getServerUrls(spec);
 
-    // Remove protocols (e.g. http://, https://) to get the host
+    if (!removeProtocol) {
+        return serverUrls;
+    }
+
     const hosts = [];
 
     for (const url of serverUrls) {
-        const host = url ? url.replace(/(^\w+:|^)\/\//, ''): '';
+        // Remove protocols (e.g. http://, https://) to get the host
+        const host = url ? url.replace(/(^\w+:|^)\/\//, '') : '';
+
         if (host && !hosts.includes(host)) {
             hosts.push(host);
         }
@@ -33,21 +39,22 @@ function getHosts(spec = {}) {
  * Resolves URLs for the OpenAPI spec's servers field.
  * Learn about the server object: https://swagger.io/specification/
  *
+ * @author Vinit Shahdeo <https://github.com/vinitshahdeo>
  * @param {object} spec - The OpenAPI specification object.
  * @param {object|array} spec.servers - The server object.
  * @returns {string[]} An array of resolved server URLs.
  */
 function getServerUrls(spec) {
-    const servers = Array.isArray(spec.servers) ? spec.servers : [spec.servers];
+    const servers = Array.isArray(spec.servers) ? spec.servers : [spec.servers],
+        serverUrls = [];
 
     // Loop through each server object and resolve its URL
-    const serverUrls = [];
     for (const server of servers) {
-        const { url, variables } = server;
+        const { url, variables } = server || {};
 
         if (!url) {
             console.info('No URL found in server object:', server);
-            continue;
+            return [];
         }
 
         // Replace the variables in the URL with their values
@@ -92,6 +99,5 @@ function getServerUrls(spec) {
 }
 
 module.exports = {
-    getServerUrls,
-    getHosts
+    resolve: getHosts
 };

@@ -4,7 +4,7 @@
   "description": "Resolve server URLs and extracts hosts from OpenAPI 3.0 and Swagger specifications.",
   "main": "index.js",
   "scripts": {
-    "test": "node test"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,12 @@
   "bugs": {
     "url": "https://github.com/vinitshahdeo/openapi-url-resolver/issues"
   },
-  "homepage": "https://github.com/vinitshahdeo/openapi-url-resolver#readme"
+  "homepage": "https://github.com/vinitshahdeo/openapi-url-resolver#readme",
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "request": "^2.88.2"
+  },
+  "dependencies": {
+    "chai": "^4.3.7"
+  }
 }

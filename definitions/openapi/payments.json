@@ -1,0 +1,138 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Payments API",
+        "description": "Manage your payments"
+    },
+    "servers": [
+        {
+            "url": "https://{username}.gigantic-server.com:{port}/{basePath}",
+            "description": "The production API server",
+            "variables": {
+                "username": {
+                    "default": "demo",
+                    "description": "this value is assigned by the service provider, in this example `gigantic-server.com`"
+                },
+                "port": {
+                    "enum": [
+                        "8443",
+                        "443"
+                    ],
+                    "default": "8443"
+                },
+                "basePath": {
+                    "default": "v2"
+                }
+            }
+        }
+    ],
+    "paths": {
+        "/payments/{paymentId}": {
+            "parameters": [
+                {
+                    "name": "paymentId",
+                    "description": "The unique identifier of the payment",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "$ref": "#/components/schemas/PaymentId"
+                    }
+                }
+            ],
+            "get": {
+                "summary": "Read a payment",
+                "responses": {
+                    "200": {
+                        "description": "The payment corresponding to the provided `paymentId`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Payment"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "No payment found for the provided `paymentId`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Unexpected error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "PaymentId": {
+                "description": "The unique identifier of a payment",
+                "type": "string"
+            },
+            "Payment": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "name",
+                    "type"
+                ],
+                "properties": {
+                    "id": {
+                        "$ref": "#/components/schemas/PaymentId"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "credit",
+                            "debit"
+                        ]
+                    },
+                    "description": {
+                        "type": "string"
+                    }
+                }
+            },
+            "Error": {
+                "type": "object",
+                "required": [
+                    "message"
+                ],
+                "properties": {
+                    "message": {
+                        "description": "A human readable error message",
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "securitySchemes": {
+            "ApiKey": {
+                "type": "apiKey",
+                "in": "header",
+                "name": "X-Api-Key"
+            }
+        }
+    },
+    "security": [
+        {
+            "ApiKey": []
+        }
+    ]
+}

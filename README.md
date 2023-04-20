@@ -2,14 +2,15 @@
 
 # OpenAPI URL Resolver
 
-`openapi-url-resolver` is an NPM package that provides a simple and efficient way to resolve URLs from OpenAPI specifications. It also removes protocols from the resolved URLs and allows you to easily extract host information from OpenAPI definitions. This package is ideal for developers working with APIs that conform to the OpenAPI specification and need to extract server information to make API calls.
+`openapi-url-resolver` is a lightweight NPM package that provides a simple and efficient way to resolve URLs from OpenAPI specifications. It also removes protocols from the resolved URLs and allows you to easily extract host information from OpenAPI definitions. This package is ideal for developers working with APIs that conform to the [OpenAPI specification](https://swagger.io/specification/) and need to extract server information to make API calls.
 
-## Add minor note about the server url, host for OpenAPI 3.x specs
 
-## Write dev.to blog about the same
+- It does not validate the OpenAPI definition. You can use for validating the OpenAPI definition.
+- It only works with OpenAPI specification object(JSON format).
+  - Use js-yml to convert yml to json
+  - Use postman-converter for Postman collection to OpenAPI json
 
-@todo: <release another npm to get the endpoints>
-
+The above are the known limitations and it is not handled to keep it lightweight and focused module to just extract the server information.
 
 ## 📦 Installation
 
@@ -19,79 +20,65 @@ You can install `openapi-url-resolver` via NPM:
 npm install openapi-url-resolver
 ```
 
-##
-
-Add notes about yaml parser, postman collection
-
-we assume openapi is valid
-
-keeping it lightweight
-
-
 ## 💻 Usage
 
-It supports two methods:
-
-- `getServerUrls` - Return the server URLs from the OpenAPI 3.x specification.
-- `extractHosts` - Get hosts information from OpenAPI & Swagger definitions.
+To use `openapi-url-resolver`, you need to pass an OpenAPI 3.x specification object to the `resolve()` function. This function will return an array of resolved server URLs:
 
 ```javascript
-const openapiUrlResolver = require('openapi-url-resolver');
-
-openapiUrlResolver.resolve(spec, false);
-const serverUrls = openapiUrlResolver.getServerUrls(spec, false);
-
-```
-
-
-To use `openapi-url-resolver`, you need to pass an OpenAPI specification object to the resolveServerUrls() function. This function will return an array of resolved server URLs:
-
-```javascript
-const openapiUrlResolver = require('openapi-url-resolver');
+const openapiUrlResolver = require('./src')
 
 // add complete spec
 const spec = {
   openapi: '3.0.0',
   servers: [
     {
-      url: 'https://api.example.com/v1',
-      description: 'Production server'
-    },
-    {
-      url: 'https://staging-api.example.com/v1',
-      description: 'Staging server'
+      url: 'https://{username}.gigantic-server.com:{port}/{basePath}',
+      description: 'The production API server',
+      variables: {
+        username: {
+          default: 'demo',
+          description: 'this value is assigned by the service provider, in this example `gigantic-server.com`'
+        },
+        port: {
+          enum: ['8443', '443'],
+          default: '8443'
+        },
+        basePath: {
+          default: 'v2'
+        }
+      }
     }
   ]
-};
+}
 
-const serverUrls = openapiUrlResolver.getServerUrls(spec);
+const hosts = openapiUrlResolver.resolve(spec)
 
-console.log(serverUrls); // ['api.example.com/v1', 'staging-api.example.com/v1']
+/*
+
+[
+  'demo.gigantic-server.com:8443/v2',
+  'demo.gigantic-server.com:443/v2'
+]
+
+*/
+console.log(hosts)
+
 ```
 
-To extract host information from an OpenAPI specification, you can use the getHosts() function:
+Pass `false` as second parameter to get the server URLs with protocols.
 
 ```javascript
-const openapiUrlResolver = require('openapi-url-resolver');
+const serverUrls = openapiUrlResolver.resolve(spec, false)
 
-// add complete spec
-const spec = {
-  openapi: '3.0.0',
-  servers: [
-    {
-      url: 'https://api.example.com/v1',
-      description: 'Production server'
-    },
-    {
-      url: 'https://staging-api.example.com/v1',
-      description: 'Staging server'
-    }
-  ]
-};
+/*
 
-const hosts = openapiUrlResolver.getHosts(spec);
+[
+  'https://demo.gigantic-server.com:8443/v2',
+  'https://demo.gigantic-server.com:443/v2'
+]
 
-console.log(hosts); // ['api.example.com', 'staging-api.example.com']
+*/
+console.log(serverUrls)
 
 ```
 
