@@ -126,7 +126,7 @@ If you find a bug or want to suggest a new feature, [please open an issue](https
 
 ## 📝 License
 
-[openapi-url-resolver](https://github.com/vinitshahdeo/openapi-url-resolver) is released under the [MIT License](./LICENSE).
+[openapi-url-resolver](https://github.com/vinitshahdeo/openapi-url-resolver) is authored by @[vinitshahdeo](https://github.com/vinitshahdeo) and released under the [MIT License](./LICENSE).
 
 ## ❤️ Support
 
