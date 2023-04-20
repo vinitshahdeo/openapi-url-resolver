@@ -29,10 +29,6 @@
   },
   "homepage": "https://github.com/vinitshahdeo/openapi-url-resolver#readme",
   "devDependencies": {
-    "mocha": "^10.2.0",
-    "request": "^2.88.2"
-  },
-  "dependencies": {
-    "chai": "^4.3.7"
+    "mocha": "^10.2.0"
   }
 }
