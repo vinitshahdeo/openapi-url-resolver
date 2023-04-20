@@ -20,8 +20,8 @@ function getHosts(spec = {}) {
     const hosts = [];
 
     for (const url of serverUrls) {
-        const host = url.replace(/(^\w+:|^)\/\//, '');
-        if (!hosts.includes(host)) {
+        const host = url ? url.replace(/(^\w+:|^)\/\//, ''): '';
+        if (host && !hosts.includes(host)) {
             hosts.push(host);
         }
     }
