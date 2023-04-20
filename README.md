@@ -2,7 +2,10 @@
 
 # OpenAPI URL Resolver
 
-`openapi-url-resolver` is a **lightweight** NPM package that provides a simple and efficient way to resolve server URLs from OpenAPI specifications. It also removes protocols from the resolved URLs and allows you to **easily extract host information from OpenAPI definitions**. This package is ideal for developers working with APIs that conform to the [OpenAPI specification](https://swagger.io/specification/) and need to extract server information to make API calls.
+![https://github.com/vinitshahdeo/openapi-url-resolver/actions/workflows/node.js.yml](https://github.com/vinitshahdeo/openapi-url-resolver/actions/workflows/node.js.yml/badge.svg)
+
+
+**openapi-url-resolver** is a **lightweight** NPM package that provides a simple and efficient way to resolve server URLs from OpenAPI specifications. It also removes protocols from the resolved URLs and allows you to **easily extract host information from OpenAPI definitions**. This package is ideal for developers working with APIs that conform to the [OpenAPI 3.x specification](https://swagger.io/specification/) and need to extract [server information](https://spec.openapis.org/oas/v3.1.0#server-object) to make API calls.
 
 ## 📦 Installation
 
@@ -14,12 +17,11 @@ npm install openapi-url-resolver
 
 ## 💻 Usage
 
-To use `openapi-url-resolver`, you need to pass an OpenAPI 3.x specification object to the resolve() function. This function will return an array of resolved server URLs:
+To use `openapi-url-resolver`, you need to pass an [OpenAPI 3.x specification](https://swagger.io/specification/) object to the `resolve()` function. This function will return an array of resolved server URLs:
 
 ```javascript
-const openapiUrlResolver = require('./src')
+const openapiUrlResolver = require('openapi-url-resolver')
 
-// add complete spec
 const spec = {
   openapi: '3.0.0',
   servers: [
@@ -74,7 +76,7 @@ console.log(serverUrls)
 
 ```
 
-## Testing
+## 🧪 Testing
 
 You can test using the below command or write your own tests using the OpenAPI specifications [examples](./definitions/).
 
@@ -82,30 +84,29 @@ You can test using the below command or write your own tests using the OpenAPI s
 npm test
 ```
 
-## Limitations
+## 🚫 Limitations
 
-The below are the known limitations, and they are not handled to keep it a lightweight and focused module to just extract the server information.
+The below are the known limitations, and they are not handled to keep it a lightweight and focused module to just extract the [server information](https://spec.openapis.org/oas/v3.1.0#server-object).
 
-- It does not validate the OpenAPI definition. You can use for validating the OpenAPI definition.
-- It only works with OpenAPI specification object(JSON format).
-  - Use js-yml to convert yml to json
-  - Use postman-converter for Postman collection to OpenAPI json
+- It does not validate the OpenAPI definition. You can use [openapi-schema-validator](https://www.npmjs.com/package/openapi-schema-validator) for validating the OpenAPI definition.
+- It only works with JSON format.
+  - Use [yaml-to-json-schema](https://www.npmjs.com/package/yaml-to-json-schema) to convert YAML to JSON.
+  - Use [postman-to-openapi](https://www.npmjs.com/package/postman-to-openapi) to Postman collection to OpenAPI 3.x
 
 ## 🤝 Contributing
 
-Contributions to `openapi-url-resolver` are most welcome! If you find a bug or want to suggest a new feature, please open an issue on the GitHub repository. If you want to contribute code, please fork the repository, make your changes, and submit a pull request. Your contributions and feedback are most welcome!
+**Contributions to `openapi-url-resolver` are most welcome!** 
 
-## ❤️ Support
-
-If you find this package useful, please consider:
-
-- Following me on Twitter for updates and package releases.
-- Starring this repository on GitHub to show your appreciation.
-- Sponsoring me on GitHub to support ongoing development.
-- Buying me a coffee via PayPal or Ko-fi to help me stay fueled and focused.
-
-Thank you for your support!
+If you find a bug or want to suggest a new feature, [please open an issue](https://github.com/vinitshahdeo/openapi-url-resolver/issues/new) on the GitHub repository. If you want to contribute code, [please fork the repository](https://github.com/vinitshahdeo/openapi-url-resolver/fork), make your changes, and **submit a pull request**. Your contributions and feedback are most welcome!
 
 ## 📝 License
 
-`openapi-url-resolver` is released under the MIT License.
+[openapi-url-resolver](https://github.com/vinitshahdeo/openapi-url-resolver) is released under the [MIT License](./LICENSE).
+
+## ❤️ Support
+
+If you find this package useful, please consider [starring this repository]() on GitHub to show your appreciation. You can stay connected with me on Twitter—[@vinit_shahdeo](https://twitter.com/Vinit_Shahdeo).
+
+<a href="https://www.buymeacoffee.com/vinitshahdeo" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+Thank you for your support! 🙏
