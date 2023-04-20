@@ -82,6 +82,14 @@ console.log(serverUrls)
 
 ```
 
+## Testing
+
+You can test using the below command or write your own tests using the OpenAPI specifications [examples](./definitions/).
+
+```sh
+npm test
+```
+
 ## 🤝 Contributing
 
 Contributions to openapi-url-resolver are welcome! If you find a bug or want to suggest a new feature, please open an issue on the GitHub repository. If you want to contribute code, please fork the repository, make your changes, and submit a pull request. Your contributions and feedback are most welcome!
