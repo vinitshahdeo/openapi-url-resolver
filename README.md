@@ -92,7 +92,7 @@ The below are the known limitations, and they are not handled to keep it a light
 
 ## 🤝 Contributing
 
-Contributions to `openapi-url-resolver` are most welcome! If you find a bug or want to suggest a new feature, please open an issue on the GitHub repository. If you want to contribute code, please fork the repository, make your changes, and submit a pull request. Your contributions and feedback are most welcome!
+Contributions to `openapi-url-resolver` are most welcome! If you find a bug or want to suggest a new feature, [please open an issue](https://github.com/vinitshahdeo/openapi-url-resolver/issues/new) on the GitHub repository. If you want to contribute code, [please fork the repository](https://github.com/vinitshahdeo/openapi-url-resolver/fork), make your changes, and **submit a pull request**. Your contributions and feedback are most welcome!
 
 ## 📝 License
 
