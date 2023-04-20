@@ -2,19 +2,19 @@
 
 # OpenAPI URL Resolver
 
-`openapi-url-resolver` is a lightweight NPM package that provides a simple and efficient way to resolve URLs from OpenAPI specifications. It also removes protocols from the resolved URLs and allows you to easily extract host information from OpenAPI definitions. This package is ideal for developers working with APIs that conform to the [OpenAPI specification](https://swagger.io/specification/) and need to extract server information to make API calls.
+`openapi-url-resolver` is a **lightweight** NPM package that provides a simple and efficient way to resolve server URLs from OpenAPI specifications. It also removes protocols from the resolved URLs and allows you to **easily extract host information from OpenAPI definitions**. This package is ideal for developers working with APIs that conform to the [OpenAPI specification](https://swagger.io/specification/) and need to extract server information to make API calls.
 
 ## 📦 Installation
 
 You can install `openapi-url-resolver` via NPM:
 
-```sh
+```bash
 npm install openapi-url-resolver
 ```
 
 ## 💻 Usage
 
-To use `openapi-url-resolver`, you need to pass an OpenAPI 3.x specification object to the `resolve()` function. This function will return an array of resolved server URLs:
+To use `openapi-url-resolver`, you need to pass an OpenAPI 3.x specification object to the resolve() function. This function will return an array of resolved server URLs:
 
 ```javascript
 const openapiUrlResolver = require('./src')
@@ -78,24 +78,22 @@ console.log(serverUrls)
 
 You can test using the below command or write your own tests using the OpenAPI specifications [examples](./definitions/).
 
-```sh
+```bash
 npm test
 ```
 
 ## Limitations
 
-It does not validate or support only format of OpenAPI definitions.
+The below are the known limitations, and they are not handled to keep it a lightweight and focused module to just extract the server information.
 
 - It does not validate the OpenAPI definition. You can use for validating the OpenAPI definition.
 - It only works with OpenAPI specification object(JSON format).
   - Use js-yml to convert yml to json
   - Use postman-converter for Postman collection to OpenAPI json
 
-The above are the known limitations and it is not handled to keep it lightweight and focused module to just extract the server information.
-
 ## 🤝 Contributing
 
-Contributions to openapi-url-resolver are welcome! If you find a bug or want to suggest a new feature, please open an issue on the GitHub repository. If you want to contribute code, please fork the repository, make your changes, and submit a pull request. Your contributions and feedback are most welcome!
+Contributions to `openapi-url-resolver` are most welcome! If you find a bug or want to suggest a new feature, please open an issue on the GitHub repository. If you want to contribute code, please fork the repository, make your changes, and submit a pull request. Your contributions and feedback are most welcome!
 
 ## ❤️ Support
 
