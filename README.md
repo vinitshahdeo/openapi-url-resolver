@@ -4,14 +4,6 @@
 
 `openapi-url-resolver` is a lightweight NPM package that provides a simple and efficient way to resolve URLs from OpenAPI specifications. It also removes protocols from the resolved URLs and allows you to easily extract host information from OpenAPI definitions. This package is ideal for developers working with APIs that conform to the [OpenAPI specification](https://swagger.io/specification/) and need to extract server information to make API calls.
 
-
-- It does not validate the OpenAPI definition. You can use for validating the OpenAPI definition.
-- It only works with OpenAPI specification object(JSON format).
-  - Use js-yml to convert yml to json
-  - Use postman-converter for Postman collection to OpenAPI json
-
-The above are the known limitations and it is not handled to keep it lightweight and focused module to just extract the server information.
-
 ## 📦 Installation
 
 You can install `openapi-url-resolver` via NPM:
@@ -89,6 +81,17 @@ You can test using the below command or write your own tests using the OpenAPI s
 ```sh
 npm test
 ```
+
+## Limitations
+
+It does not validate or support only format of OpenAPI definitions.
+
+- It does not validate the OpenAPI definition. You can use for validating the OpenAPI definition.
+- It only works with OpenAPI specification object(JSON format).
+  - Use js-yml to convert yml to json
+  - Use postman-converter for Postman collection to OpenAPI json
+
+The above are the known limitations and it is not handled to keep it lightweight and focused module to just extract the server information.
 
 ## 🤝 Contributing
 
