@@ -15,19 +15,10 @@
 -->
 <p>
 
-<a href="https://www.npmjs.com/package/openapi-url-resolver">
-<img alt="npm openapi-url-resolver" src="https://img.shields.io/npm/v/openapi-url-resolver?label=openapi-url-resolver&logo=npm">
-</a>
+<a href="https://www.npmjs.com/package/openapi-url-resolver"><img alt="npm openapi-url-resolver" src="https://img.shields.io/npm/v/openapi-url-resolver?label=openapi-url-resolver&logo=npm"></a>
 <a href="https://github.com/vinitshahdeo/openapi-url-resolver/actions/workflows/node.js.yml"><img src="https://github.com/vinitshahdeo/openapi-url-resolver/actions/workflows/node.js.yml/badge.svg" alt="GitHub Actions for OpenAPI URL Resolver"></a>
-<a href="https://twitter.com/Vinit_Shahdeo">
-  <img src="https://img.shields.io/twitter/follow/Vinit_Shahdeo?style=social" alt="Twitter Follow">
-</a>
-
-
-
-<a href='./LICENSE'>
-<img alt="GitHub License" src="https://img.shields.io/github/license/vinitshahdeo/celeb-diwali?label=License&logo=github">
-</a>
+<a href="https://twitter.com/Vinit_Shahdeo"><img src="https://img.shields.io/twitter/follow/Vinit_Shahdeo?style=social" alt="Twitter Follow"></a>
+<a href='./LICENSE'><img alt="GitHub License" src="https://img.shields.io/github/license/vinitshahdeo/celeb-diwali?label=License&logo=github"></a>
 
 </p>
 <br/>
