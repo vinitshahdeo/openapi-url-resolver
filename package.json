@@ -1,8 +1,8 @@
 {
   "name": "openapi-url-resolver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Resolve server URLs and extract hosts from OpenAPI 3.0 and Swagger specifications.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "mocha"
   },
