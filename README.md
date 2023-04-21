@@ -2,6 +2,7 @@
 <img src="./assets/openapi-logo.png" height='100px' width='100px'/>
 <h1>OpenAPI URL Resolver</h1>
 
+<!--
 <p>
 <a href="">
 <img alt="npm openapi-url-resolver" src="https://img.shields.io/npm/v/openapi-url-resolver?label=openapi-url-resolver&logo=npm">
@@ -11,9 +12,13 @@
 
 <img alt="npm" src="https://img.shields.io/npm/dm/openapi-url-resolver?logo=npm&color=yellowgreen">
 </p>
+-->
 <p>
-<a href="https://github.com/vinitshahdeo/openapi-url-resolver/actions/workflows/node.js.yml"><img src="https://github.com/vinitshahdeo/openapi-url-resolver/actions/workflows/node.js.yml/badge.svg" alt="GitHub Actions for OpenAPI URL Resolver"></a>
 
+<a href="https://www.npmjs.com/package/openapi-url-resolver">
+<img alt="npm openapi-url-resolver" src="https://img.shields.io/npm/v/openapi-url-resolver?label=openapi-url-resolver&logo=npm">
+</a>
+<a href="https://github.com/vinitshahdeo/openapi-url-resolver/actions/workflows/node.js.yml"><img src="https://github.com/vinitshahdeo/openapi-url-resolver/actions/workflows/node.js.yml/badge.svg" alt="GitHub Actions for OpenAPI URL Resolver"></a>
 <a href="https://twitter.com/Vinit_Shahdeo">
   <img src="https://img.shields.io/twitter/follow/Vinit_Shahdeo?style=social" alt="Twitter Follow">
 </a>
@@ -33,7 +38,7 @@
 
 ## 📦 Installation
 
-You can install `openapi-url-resolver` via NPM:
+You can install `openapi-url-resolver` via [NPM](https://www.npmjs.com/package/openapi-url-resolver):
 
 ```bash
 npm install openapi-url-resolver
@@ -125,12 +130,12 @@ If you find a bug or want to suggest a new feature, [please open an issue](https
 
 ## 📝 License
 
-[openapi-url-resolver](https://github.com/vinitshahdeo/openapi-url-resolver) is authored by @[vinitshahdeo](https://github.com/vinitshahdeo) and released under the [MIT License](./LICENSE).
+[openapi-url-resolver](https://www.npmjs.com/package/openapi-url-resolver) is authored by @[vinitshahdeo](https://github.com/vinitshahdeo) and released under the [MIT License](./LICENSE).
 
 ## ❤️ Support
 
 If you find this package useful, please consider [starring this repository]() on GitHub to show your appreciation. You can stay connected with me on Twitter—[@vinit_shahdeo](https://twitter.com/Vinit_Shahdeo).
 
-<a href="https://www.buymeacoffee.com/vinitshahdeo" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+<a href="https://www.buymeacoffee.com/vinitshahdeo" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="40px" width="150px" ></a>
 
 Thank you for your support! 🙏
