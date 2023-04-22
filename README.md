@@ -125,7 +125,7 @@ If you find a bug or want to suggest a new feature, please [open an issue](https
 
 ## ❤️ Support
 
-If you find this package useful, please consider [starring this repository]() on GitHub to show your appreciation. You can stay connected with me on Twitter—[@vinit_shahdeo](https://twitter.com/Vinit_Shahdeo).
+If you find this package useful, please consider [starring this repository](https://github.com/vinitshahdeo/openapi-url-resolver) on GitHub to show your appreciation. You can stay connected with me on Twitter—[@vinit_shahdeo](https://twitter.com/Vinit_Shahdeo).
 
 <a href="https://www.buymeacoffee.com/vinitshahdeo" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="40px" width="150px" ></a>
 
