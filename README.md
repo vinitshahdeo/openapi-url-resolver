@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/openapi-logo.png" height='100px' width='100px'/>
+<img src="./assets/openapi-url-resolver-logo.png" height='50%' width='50%'/>
 
 <h1>OpenAPI URL Resolver</h1>
 
