@@ -2,20 +2,19 @@
 <img src="./assets/openapi-logo.png" height='100px' width='100px'/>
 <h1>OpenAPI URL Resolver</h1>
 
-<!--
+
 <p>
 <a href="">
 <img alt="npm openapi-url-resolver" src="https://img.shields.io/npm/v/openapi-url-resolver?label=openapi-url-resolver&logo=npm">
 </a>
 
-<img alt="npm bundle size" src="https://img.shields.io/bundlephobia/min/openapi-url-resolver?logo=npm&color=yellow">
+<img alt="npm bundle size" src="https://img.shields.io/bundlephobia/min/openapi-url-resolver?logo=npm">
 
-<img alt="npm" src="https://img.shields.io/npm/dm/openapi-url-resolver?logo=npm&color=yellowgreen">
+<img alt="npm openapi-url-resolver" src="https://img.shields.io/npm/dm/openapi-url-resolver?logo=npm&color=yellowgreen">
 </p>
--->
+
 <p>
 
-<a href="https://www.npmjs.com/package/openapi-url-resolver"><img alt="npm openapi-url-resolver" src="https://img.shields.io/npm/v/openapi-url-resolver?label=openapi-url-resolver&logo=npm"></a>
 <a href="https://github.com/vinitshahdeo/openapi-url-resolver/actions/workflows/node.js.yml"><img src="https://github.com/vinitshahdeo/openapi-url-resolver/actions/workflows/node.js.yml/badge.svg" alt="GitHub Actions for OpenAPI URL Resolver"></a>
 <a href="https://twitter.com/Vinit_Shahdeo"><img src="https://img.shields.io/twitter/follow/Vinit_Shahdeo?style=social" alt="Twitter Follow"></a>
 <a href='./LICENSE'><img alt="GitHub License" src="https://img.shields.io/github/license/vinitshahdeo/celeb-diwali?label=License&logo=github"></a>
@@ -27,6 +26,12 @@
 
 **openapi-url-resolver** is a **lightweight** NPM package that provides a simple and efficient way to resolve server URLs from OpenAPI specifications. It also removes protocols from the resolved URLs and allows you to **easily extract host information from OpenAPI definitions**. This package is ideal for developers working with APIs that conform to the [OpenAPI 3.x specification](https://swagger.io/specification/) and need to extract [server information](https://spec.openapis.org/oas/v3.1.0#server-object) to make API calls.
 
+### Features:
+
+- 🚀 **Lightweight** module with only 965 bytes in size
+- 🎉 **Zero dependencies**, making it easy to install and use in your projects
+- 🔍 Efficient and simple way to resolve [server URLs](https://spec.openapis.org/oas/v3.1.0#server-object) from OpenAPI specifications
+
 ## 📦 Installation
 
 You can install `openapi-url-resolver` via [NPM](https://www.npmjs.com/package/openapi-url-resolver):
@@ -34,6 +39,8 @@ You can install `openapi-url-resolver` via [NPM](https://www.npmjs.com/package/o
 ```bash
 npm install openapi-url-resolver
 ```
+
+[![openapi-url-resolver on NPM](https://nodei.co/npm/openapi-url-resolver.png)](https://nodei.co/npm/openapi-url-resolver/)
 
 ## 💻 Usage
 
